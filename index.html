@@ -1,6 +1,5 @@
 # sgowtham1996.github.io
 Project website
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,6 +8,8 @@ Project website
             body{
                 background-color: rgb(156, 237, 236);
                 font-family:sans-serif;
+                margin:10px;
+                border:1px ridge;
             }
             ol{
                 background-color:rgb(8, 8, 8);
@@ -44,16 +45,27 @@ Project website
             #lt{
                 table-layout: center;
             }
-            #prac{
+            .prac{
                 background-color:rgb(234, 245, 86);
             }
             #prac1{
                 color:red;
             }
+            #container{
+            margin: auto;
+            border: 1px solid rgb(145, 0, 0);
+            border-top: 10px solid ;
+            padding: 15px;
+            }
+            #pic{
+                 margin:auto;
+                 border:10px dashed black;
+                padding:auto;
+            }
             </style>
     </head>
     <body>
-        
+        <div id="container">
         <h1 class="good"><span id="prac1">Gowtham's</span> blog on learning HTML and CSS </h1>
         <table id="lt">
             <thead>
@@ -120,18 +132,20 @@ Project website
         <!--By clicking the id attribute above will take you to an internal link id="go"-->
         <h2 class ="good"><strong>HEADING :</strong></h2>
         <p>
-            <div id="prac"><em>This <strong>picture </strong><a id="go">contains two small toy house's decorated with stones and well taken bokey shot using an dslr camera.</a></em></div>
+            <div class="prac"><em>This <strong>picture </strong><a id="go">contains two small toy house's decorated with stones and well taken bokey shot using an dslr camera.</a></em></div>
         
         <br>
         
         <img src="https://www.kasandbox.org/programming-images/seasonal/gingerbread-houses.png" alt="This image contains pictures with words heading and tags as a meaning of this webpage" width="500">
-        <h1>India</h1><strong id="one">(click the image below for link attribute check)</strong>
+        <h1>India</h1><strong id="one"><div>(click the image below for testing link attribute of HTML)</div></strong>
+        
         <br>
         <!--By clicking this picture link which is made through anchor tag will take you to the website incredible India -->
-        <a target="_blank" href="https://www.incredibleindia.org/content/incredibleindia/en.html"><img src ="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/10/03/17/tajmahal.jpg?w968h681" alt="This is an image of an taj mahal among seven wonders of world" width="500">
+        <a target="_blank" href="https://www.incredibleindia.org/content/incredibleindia/en.html"><img id="pic" src ="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/10/03/17/tajmahal.jpg?w968h681" alt="This is an image of an taj mahal among seven wonders of world" width="500">
         </a>
+        <p class="prac">Clicking the image will take you to incredible INDIA wesite one of the tourism dealers of INDIA</p> 
         <!--This is simpple table of 2*2 matrix-->
-        
+        </div>
     </body>
 </html>
         
