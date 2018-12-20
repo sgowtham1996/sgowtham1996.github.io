@@ -33,17 +33,28 @@ Project website
                 text-decoration: underline;
             }      
             #lit{
-                text-align: inherit;
+                text-align:left;
                 line-height: 2em;
+                width:40%;
+                height:250px;
+                overflow-x:auto;
+                
+                
             }
             #lt{
                 table-layout: center;
+            }
+            #prac{
+                background-color:rgb(234, 245, 86);
+            }
+            #prac1{
+                color:red;
             }
             </style>
     </head>
     <body>
         
-        <h1 class="good">Gowtham's blog on learning HTML and CSS </h1>
+        <h1 class="good"><span id="prac1">Gowtham's</span> blog on learning HTML and CSS </h1>
         <table id="lt">
             <thead>
                 <tr>
@@ -53,7 +64,7 @@ Project website
             </thead>
             <tbody>
                 <tr>
-                    <td>GOWTHAM S</td>
+                    <td>Gowtham S</td>
                     <td>006</td>
                 </tr>
             </tbody>
@@ -95,6 +106,11 @@ Project website
             <li>text-align</li>
             <li>text-decoration</li>
             <li>CSS inheritance</li>
+            <li>span</li>
+            <li>div</li>
+            <li>width</li>
+            <li>height</li>
+            <li>overflow</li>
 
         </ol></h3>
         <h2>SECOND POST!</h2>
@@ -104,8 +120,8 @@ Project website
         <!--By clicking the id attribute above will take you to an internal link id="go"-->
         <h2 class ="good"><strong>HEADING :</strong></h2>
         <p>
-            <em>This <strong>picture </strong><a id="go">contains two small toy house's decorated with stones and well taken bokey shot using an dslr camera.</a></em>
-        </p>
+            <div id="prac"><em>This <strong>picture </strong><a id="go">contains two small toy house's decorated with stones and well taken bokey shot using an dslr camera.</a></em></div>
+        
         <br>
         
         <img src="https://www.kasandbox.org/programming-images/seasonal/gingerbread-houses.png" alt="This image contains pictures with words heading and tags as a meaning of this webpage" width="500">
@@ -118,3 +134,5 @@ Project website
         
     </body>
 </html>
+        
+    
