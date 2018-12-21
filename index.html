@@ -42,7 +42,7 @@ Project website
                  border: 3px grove black;
                 
                }*/
-            #lit{
+            .lit{
                 text-align:left;
                 line-height: 2em;
                 width:40%;
@@ -54,20 +54,26 @@ Project website
             }
             .prac{
                 background-color:rgb(234, 245, 86);
-                border: 3px grove black;
+                border: 5px grove black;
                 width: auto;
                 height: auto;
                 -webkit-animation: mymove 25s infinite; /* Chrome, Safari, Opera */
-                animation: mymove 25s infinite; 
+                animation: mymove 8s infinite; 
+                float:right;
+                margin-right:160px;
+                margin-bottom:1000px;
+                margin-left:20px;
+                margin-top:200px;
+                
             }
             /* Chrome, Safari, Opera */
             @-webkit-keyframes mymove {
-                75% {font-size: 40px;}
+                75% {font-size: 15px;}
                 
             }
             /* Standard syntax */
             @keyframes mymove {
-                75% {font-size: 30px;}  
+                75% {font-size: 15px;}  
             }
             #prac1{
                 color:red; 
@@ -88,19 +94,50 @@ Project website
             {
                 opacity: 0.80;
                 position: fixed;
-                top:20px;
-                right:24px;
-                
+                top:-70px;
+                left:1280;
+                                
             }
             .pra{
                 background-color:rgb(234, 245, 86);
+            }
+            .multi{
+                color:crimson;
+            }
+            .elsec{
+                background-color: brown;
+                color:azure; 
+            }
+            span.elsec{
+                background-color:rgb(99,1,1);
+            }
+            #colo{
+                background-color: aquamarine;
+            }
+            ol li strong {
+                color:rgb(190, 230, 16);
+
+            }
+            h3.lit {
+                color:blueviolet;
+            }
+            
+            #black{
+                color:black;
+            }
+            #gr1,#gr2{
+                color:chartreuse;
+            }
+            a:hover, a:active, sa:focus{
+                background-color: rgba(227, 233, 145, 0.863);
+            }
 
                  
             </style>
     </head>
     <body>
         <div id="container">
-        <h1 class="fix"><a target="blank" href="https://www.w3schools.com/html/html_intro.asp"><img src="https://i.gifer.com/embedded/download/5QU0.gif" width="280"></a></h1>
+        <h1 class="fix"><a target="blank" href="https://www.w3schools.com/html/html_intro.asp"><img src="https://cdn0.iconfinder.com/data/icons/communication-technology/500/code_brackets-512.png" width="280"></a></h1>
         <h1 class="good"><span id="prac1">Gowtham's</span> blog on learning HTML and CSS </h1>
         <table id="lt">
             <thead>
@@ -124,8 +161,8 @@ Project website
         <h2>First post on!</h2>
         <h5>~Posted on 20/12/2018 14:52pm INDIA</h5>
         <h1 id="one" class="god"><strong><div class="ani">Different HTML Tags,attributes and CSS text properties</div></strong></h1>
-        <h2 class = "good">LIST OF TAGS AVAILABLE IN THIS PAGE :</h2>
-        <h3><ol id="lit">
+        <h2 class = "good multi" >LIST OF TAGS AVAILABLE IN THIS PAGE :</h2>
+        <h3><ol class="lit">
             <li>Heading</li>
             <li>Paragraph</li>
             <li>META</li>
@@ -133,7 +170,7 @@ Project website
             <li>Emphasize</li>
             <li>Strong</li>
             <li>list</li>
-            <li>Image</li>
+            <li><strong>Image</strong></li>
             <li>Style</li>
             <li>Element id</li>
             <li>selector id</li>
@@ -165,21 +202,42 @@ Project website
             <li>animator</li>
             <li>position</li>
             <li>Opacity</li>
+            <li>Multi class</li>
+            <li>element selector within classes</li>
+            <li>Group selector</li>
+            <li>Dynamic pseudo classes</li>
 
         </ol></h3>
         <h2>SECOND POST!</h2>
+        <h5>~Posted on 21/12/2018 19:03pm INDIA</h5>
+        <div id="colo">
+                <h2 class="elsec">THIS IS A HEADING WHICH EXPLAINS ABOUT ELEMENT SELECTOR WITHIN AN CLASSES</h2>
+                <h3 class="lit">A CSS rule-set consists of a <strong>selector</strong> and a declaration block: The
+                    <strong>selector</strong> points to the HTML <strong>element</strong> you want to style.<br>
+                     <span class="elsec"> Each declaration includes a CSS property name and a value, separated by a colon.
+                     </span></h3>
+                
+        </div>
+        <h2>THIRD POST!</h2>
+        <h5>~Posted on 20/12/2018 14:52pm INDIA</h5>
+        <div>
+                <h1 id="gr1">GROUP 1</h1>
+                <h2 id="gr2">GROUP 2</h2>
+        </div>
+
+        <h2>FOURTH POST!</h2>
         <h5>~Posted on 20/12/2018 14:52pm INDIA</h5>
         <h1 id="two" class="god"><strong><div class="ani">Execution of different tags,attributes and ID's usage</div></strong></h1>
         
         <!--By clicking the id attribute above will take you to an internal link id="go"-->
         <h2 class ="good"><strong>HEADING :</strong></h2>
         <p>
-            <div class="pra"><em>This <strong>picture </strong><a id="go">contains two small toy house's decorated with stones and well taken bokey shot using an dslr camera.</a></em></div>
+            <div class="pra"><em>This <strong>picture </strong><a id="go">contains gif about HTML and CSS tags</a></em></div>
         
         <br>
         
-        <img src="https://www.kasandbox.org/programming-images/seasonal/gingerbread-houses.png" alt="This image contains pictures with words heading and tags as a meaning of this webpage" width="500">
-        <h1>India</h1><strong id="one"><div>(click the image below for testing link attribute of HTML)</div></strong>
+        <img src="https://i.gifer.com/embedded/download/5QU0.gif" alt="This image contains pictures with words heading and tags as a meaning of this webpage" width="800">
+        <h1 id="black">India</h1><strong id="one"><div>(click the image below for testing link attribute of HTML)</div></strong>
         
         <br>
         <!--By clicking this picture link which is made through anchor tag will take you to the website incredible India -->
@@ -187,8 +245,9 @@ Project website
         </a>
         <p class="prac">Clicking the image will take you to incredible INDIA official website one of the tourism dealers of INDIA</p> 
         <!--This is simpple table of 2*2 matrix-->
-        
-        </div>
+    </div>
+    
+   
        
     </body>
 </html>
